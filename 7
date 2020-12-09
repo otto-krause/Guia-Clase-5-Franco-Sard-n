@@ -1,0 +1,23 @@
+#include<stdio.h> 
+#include<stdlib.h> 
+int main() 
+{ 
+int i, i1, dv, vt, vm, vg, mv; 
+vm=0; 
+vg=0; 
+mv=0; 
+for (i=1; i<=20; i++) { 
+vt=0; 
+for (i1=1; i1<=15; i1++) { 
+printf("Ingrese la venta del dia %d ",i1); 
+scanf("%d",&dv); 
+vt=vt+dv; 
+if (vm<dv) { 
+vm=dv 
+mv=i; 
+}} 
+printf("La venta total del vendedor %d es
+%d "i,vt); 
+vg=vg+vt; 
+printf("La venta general es %d y la mejor venta fue hecha por el vendedor %d por %d", vg, mv, vm); 
+} 
